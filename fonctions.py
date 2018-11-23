@@ -12,6 +12,9 @@ import sys
 import pickle
 
 
+def bonjour():
+        print("bonjour")
+        
 def creer_labyrinthe(chemin):
 
         with open(chemin, "r") as fichier:
