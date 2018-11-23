@@ -5,7 +5,7 @@
 - quitter: Quitte le jeu. Si partie finie, supprime la sauvegarde eventuelle,
 si partie en cours, l'enregistre.
 - jouer: Prend le jeu actuel, la direction du mouvement, le nombre de cases,
-et renvoit le nouveau jeu après mouvement."""
+et renvoit le nouveau jeu aprÃ¨s mouvement."""
 
 import os
 import sys
@@ -14,6 +14,9 @@ import pickle
 
 def bonjour():
         print("bonjour")
+
+def auRevoir():
+        print("au revoir")
         
 def creer_labyrinthe(chemin):
 
@@ -32,12 +35,12 @@ def quitter(jeu):
                         mon_pickler = pickle.Pickler(fichier)
                         mon_pickler.dump(jeu)
                 print ("**********************************")
-                print ("**      Partie sauvegardée      **")
+                print ("**      Partie sauvegardÃ©e      **")
                 print ("**********************************")
                 sys.exit(0)
         else:
                 print ("**********************************")
-                print ("**      Youpi c'est gagné!      **")
+                print ("**      Youpi c'est gagnÃ©!      **")
                 print ("**********************************")
                 sys.exit(0)
                 
